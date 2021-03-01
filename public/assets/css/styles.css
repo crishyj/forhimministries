@@ -1,0 +1,371 @@
+﻿/* Steve Morgan - www.ForHimMin.net Rev 0.0 */
+/* This work was created to suport the FHM web page and create a base style sheet for future web pages */
+
+
+/* Color Legend */
+
+
+/* Reset */
+
+	html, body { margin: 0; padding: 0; border: 0;
+					background: transparent; font-size: 10px; }
+					
+	div, span, article, aside, footer, header, hgroup, nav, section, 
+	h1, h2, h3, h4, h5, h6, p, blockqoute, a, ol, ul, li, 
+	table, tr, th, td, tbody, tfoot, thead {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+		background: transparent;
+		}
+		
+	img		{ margin: 0; padding: 0; border: 0; }
+	
+	table, tr, th, td, tbody, tfoot, thead {
+		margin: 0; padding: 0; border: 0;
+		vertical-align: baseline; 
+		background: transparent;
+		}
+	
+	table { border-collapse: collapse; border-spacing: 0; }
+	
+	input, select, textarea, form, fieldset {
+		margin: 0; padding: 0; border: 0;
+		}
+		
+	article, aside, dialog, figure, footer, header, hgroup, nav, section {
+		display: block;} 
+	
+	h1, h2, h3, h4, h5, h6, p, li, blockqoute, td, th, a, caption, em, strong, strike {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:100%;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 100%;
+		text-indent: 0;
+		text-decoration: none;
+		text-align: left;
+		color: #000;
+		}
+		
+	ol, ul { list-style: none; }
+	
+
+/* Global */
+
+	html {   }
+	body { background-color:#000040;  }
+
+
+
+/* Headings */
+
+	h1, h2, h3, h4, h5, h6 {font-weight: bold; color: #000; }
+	
+	h1 { font-size:24px; }
+	h2 { font-size:20px; }
+	h3 { font-size:16px; }
+	h4 { font-size:14px; }
+	h5 { font-size:14px; }
+	h6 { font-size:14px; }
+	
+	h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+	
+	
+
+/* Text Elements */
+
+	p					{ color:#000; font-size:12px; line-height: 150%; }
+	p .left				{ margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+	p .right			{ margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+	
+	a					{   }
+	a:link				{ color: #00f;   }
+	a:visited			{ color: #00f;   }
+	a:active			{ color: #00f;   }
+	a:focus				{ color: #666;   }
+	a:hover				{ color:#7D0000;   }
+	
+	blockqoute			{ color: #000; font-size: 12px; }
+	
+	strong				{ font-weight: bold;  }
+	em 					{ font-style: italic; }
+	
+
+/* Lists */
+
+	ul					{   }
+	ol					{ list-style-type: decimal; }
+	
+	ul li				{ color: #000; font-size: 12px; }
+	ol li				{ color: #000; font-size: 12px; }
+	
+	dl					{   }
+	dt					{   }
+	dd					{   }
+	
+
+/* Tables */
+
+	table				{ width: 100%; }
+	
+	tr					{   }
+	.odd				{ background-color: #eee; }
+	.even				{ background-color: #fff; }
+	
+	th					{ font-weight: bold; }
+	thead, th			{ background: #ccc; }
+	
+	tbody				{   }
+	
+	th, td, caption		{   }
+	caption				{   }
+	
+	tfoot				{   }
+	.tfooter			{ background-color: #ccc; text-align: center; font-style: italic; }
+	
+	caption				{ background: #efefef; }
+	
+
+
+/* Containers */
+
+	#wrapper			{ width: 900px; margin: 0px auto; background-color: #9BB6DD; }
+		
+	#top				{ background-image:url('../images/Header Image 1.jpg'); width: 100%; padding: 0 0; overflow: hidden; 
+							border-bottom: 1px #0000FF solid; }
+	
+	#logo1				{ float:left; margin: 10px 0 0 0 10px; padding: 10px 0 0 10px; width: 10%;  }
+	#logo2				{ float:left; margin: 10px 0; padding: 5px 0; width: 60%; }
+	
+	
+	#social-media		{ float: right; margin: 10px 10px 0 0; padding: 25px 0 10px 0;    }
+	#social-media p		{ color: #FFFFFF; font-size: 12px; font-weight: bold; margin: 4px 10px 4px 0px; }
+	#social-media h3	{ color:#0000B7; font-size: 12px; font-weight: bold; }	
+	#social-media img	{ width: 30px; height: 30px;  }
+	#social-media ul li	{ display: inline; }
+	
+	#social-media .dropdown	{ position:absolute;
+							display: inline-block;  }
+	#social-media .dropdown-content
+						{ display: none;
+							position: absolute;
+							z-index: 1;
+							background-color: #ffffff;
+							font-size: 14px;
+							min-width: 160px;
+							box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
+	#social-media .dropdown-content a
+						{ color: #000000;
+							padding: 12px 16px;
+							text-decoration: none;
+							display: block;  }	
+	#social-media .dropdown-content a:hover
+						{ background-color: #7D0000; }
+	#social-media .dropdown:hover .dropdown-content
+						{ display: block; }
+	
+	.dropdown 			{ position:static; display: inline-block; }
+	.dropdown-content	{ display:block;
+						  position:absolute; right: 0px;
+						  background-image:url('../images/MenuBlockBackground.png');
+						  min-width: 120px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						  padding: 10px 10px;  }
+						  
+	.dropdown:hover .dropdown-content { display:block; }
+	
+	#topnav				{ background-color:#7498ED; clear:both;  }
+	#topnav	ul			{ width:100%; float:left; margin: 0px; background-color: #7498ED;
+							border-bottom: 3px #0000FF solid; }
+	#topnav ul li		{ display:inline-block; }
+	#topnav ul li:hover	{ background-color:#7D0000; }
+	#topnav ul li a		{ float:left; padding: 10px 19px; font-weight: bold;   }
+	#topnav ul li:hover ul	{display: block; }	
+	.dropbtn			{ background-color: #7498ED;
+							color: white;
+							padding: 16px;
+							font-size: 12px;
+							cursor: pointer; }
+	#topnav .dropdown	{ position:absolute;
+							display: inline-block;  }
+	#topnav .dropdown-content
+						{ display: none;
+							position: absolute;
+							z-index: 1;
+							background-color: #ffffff;
+							font-size: 14px;
+							min-width: 160px;
+							box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
+	#topnav .dropdown-content a
+						{ color: #000000;
+							padding: 12px 16px;
+							text-decoration: none;
+							display: block;  }	
+	#topnav .dropdown-content a:hover
+						{ background-color: #7D0000; }
+	#topnav .dropdown:hover .dropdown-content
+						{ display: block; }
+	#topnav.dropdown:hover .dropbtn
+						{background-color: #3e8e41:  }
+
+	#topnav a:link		{ color: #00006F;  }
+	#topnav a:visited	{ color: #00006F;  }
+	#topnav a:active	{ color: #FFFF11;  }
+	#topnav a:hover		{ color: #FFFFFF; background-color:#7D0000; }
+	#topnav a:focus		{ color: #00006F;  }
+
+	
+	#slider				{ width : 100%; background-image:url('../images/DSFHT Sign.jpg'); padding: 0 0; overflow: hidden; }
+	
+	#subbanner			{ width: 100%; background-color: #555555; 
+							padding: 0 0 0 0; overflow: hidden;   }
+	#subbanner h3		{ color: #ffffff; font-size: 16px; font-weight: bold;
+							text-align: center; line-height: 180%; } 
+	
+	
+	#content			{ float: left; width: 650px; padding: 10px 20px 20px 20px; 
+							background-color: #9BB6DD; border-bottom: 3px #777777 solid; border-right: 3px #777777 solid; }
+	#Page				{ margin: auto; width: 235px; padding: 0; }
+	#content img		{ margin: 0 0 0 120px; width: 400px; padding: 0; }	
+	#content h1			{ margin: 0 0 20px 0; font-size: 32px;
+							border-bottom: 1px #777777 solid; padding: 20px 0; }
+	#content h4			{ margin: 16px 0; text-align: center; line-height:160%; }
+	
+	#content2			{ float: left; width: 650px; padding: 20px; background-color: #9BB6DD; border-right: 3px #777777 solid; }
+	#content2 h2		{ margin: 0; font-size: 16px; padding: 0 0 10px 0; }
+	#content2 h3		{ margin: 10px 0; text-align: left; line-height:110%; }
+	#content2 img		{ padding: 8px; border: 1px #888888 solid; margin:10px 0 20px 5px; }
+	
+	#content3			{ clear:both; width 100%; background-image:url('../images/Content Background5.jpg');}
+	#content3 h2		{ margin: 0 60px 0 60px; font-size: 18px; padding:0 0 5 0 ; text-aliign: center; color:#3147AF; }
+	#content3 form button		{ text-align: center; }
+	#content3 img		{ margin: 0 10px 0 320px; width: 400px; padding:10px 0 10px 0;}	
+
+	
+	#content4			{ clear:both; width 100%; background-image:url('../images/Content Background5.jpg');}
+	#content4 h2		{ text-align: center; margin : 0 60px 0 60px; font-size: 18px; padding: 0 ; color:#3147AF; }
+	#content4 img		{ margin: 0 10px 0 290px; width: 400px; padding:15px 0 10px 0;}
+						
+	#content5			{ clear:both; width 100%; background-image:url('../images/Content Background5.jpg');}
+	#content5 h2		{ text-align: center; margin : 0 60px 0 60px; font-size: 18px; padding: 0 ; color:#3147AF; }
+	#content5 img		{ margin: 0 10px 0 300px; width: 400px; padding:15px 0 10px 0;}
+
+	
+	#content6			{ clear:both; width 100%; background-image:url('../images/Content Background5.jpg');}
+	#content6 p			{ font-size:8px;}
+	#content6 h2		{ text-align: center; font-size: 18px; padding:0 0 5 0 ; color:#3147AF; }
+	#content6 h3		{ text-align: center; font-size: 16px; padding:0 0 5 0 ; color:#000000; }
+	#content6 h4		{ text-align:left; font-size: 14px; color:#3147AF; }
+	#content6 img		{ align: "center"}	
+	
+	#rightside			{ margin-left: 675px; padding:20px; }
+	#rightside h2		{ margin:20px 0 10px 10px;  }
+	#rightside p		{ margin:20px 0 15px 10px; font-size: 12px; line-height: 160%;  }
+	#rightside a:link		{ color: #0000FF;  }
+	#rightside a:visited	{ color: #0000FF;  }
+	#rightside a:active		{ color: #0000FF;  }
+	#rightside a:hover		{ color: #FFFFFF; background-color:#7D0000; }
+	#rightside a:focus		{ color: #0000FF;  }
+	
+	#footer				{ clear: both; width :100%; background-color: #000000; 
+							padding: 5px 0; overflow: hidden; }
+	#footer p			{ text-align:center; color:#FFFFFF; }
+	
+		
+	
+
+/* Forms */
+			
+	#salvation_form		{clear: both; width: 100%; height: 165px; background: rgba(0, 0, 0, .75); margin: 0px; padding: 0 0; overflow: hidden; border-bottom: 1px #0000FF solid;}
+	#salvation_form	p	{clear: both; text-align : center; margin-left: 0px; font-size: 14px; color:#77F2EF;}
+	
+	#prayer_request		{clear: both; width: 100%; height:inherit; overflow: hidden; margin: 0px; padding: 0 0 0 120px; }
+
+
+	form { text-align:left; margin: 0px; }
+	
+	label, submit, input, textarea {
+		border: 0; padding: 0; margin: 0; background: none; }
+		
+	label {
+		float: left; width: 150px; 
+		text-align: right; display: block;
+		}
+		
+	input, textarea {
+		border: 1px #333 solid; margin-left: 10px;
+		}
+		
+	textarea {
+		width: 300px; height: 150px;
+		margin-bottom: 16px;
+		}
+		
+	select {   }
+	
+	.submit	{
+		width: 90px; height: 25px;
+		margin-left: 0px;
+		font-size: 12px;
+		}
+		
+	br 	{ clear: left; }
+	
+	
+/* Micellaneous */
+
+	.copyright-text { font-size: 80%; font-style: italic; color: #333;  }
+	.footer-text	{ font-size: 80%; font-style: normal; color: #666;  }
+	
+	.title			{ font-size: 18px; font-weight: bold; color: #333;  }
+	.subtitle		{ font-size: 14px; font-style: italic; color: #333; }
+	
+	.artist			{ font-size: 16px; font-weight: bold; color: #333;  }
+	.author			{ font-size: 14px; font-weight: bold; color: #555;  }
+	.editor			{ font-size: 14px; font-style: italic; color: #555; }
+	
+	.pub-date		{ font-size: 10px; font-style: italic; color: #555; }
+	.article-date	{ font-size: 10px; font-style: italic; color: #555; }
+	.location		{ font-size: 10px; font-style: italic; color: #555; }
+	
+	.float-right	{ float: right; }
+	.float-left		{ float: left; }
+	.cleat			{ clear: both; }
+	
+	.hide			{ display: none; }
+	.block			{ display: block; }
+	.inline			{ display: inline; }
+	
+	.first			{ font-weight: bold; }
+	.last			{ font-weight: bold; }
+	.left			{ font-weight: bold; text-align: left; }
+	.right			{ font-weight: bold; text-align: right; }
+	
+	.added			{ background: #d7d7ff; }
+	.removed		{ background: #ffcece; collor: #f00; }
+	.changed		{ background: #ffb; }
+	
+
+/* Success, info, notice and error/alert boxes - from blueprint CSS Framework */
+
+	.error, .alert, .notice, .success, .info {
+		padding: 0.8em; margin-bottom: 1em; border: 2px solid #ddd; }
+		
+	.error, .alert	{ background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+	
+	.notice			{ background: #fff6bf; color: #514721; border-color: #ffd324; }
+	
+	.success		{ background: #e6efc2; color: #264409; border-color: #c6d880; }
+	
+	.info			{ background: #d5edf8; color: #205791; border-color: #92cae4; }
+	
+	.error a	{ color: #8a1f11; }
+	.alert a	{ color: #8a1f11; }
+	
+	.notice a	{ color: #514721; }
+	.success a	{ color: #264409; }
+	.info a		{ color: #205791; }
+	
+	

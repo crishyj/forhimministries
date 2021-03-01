@@ -1,0 +1,253 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="container home">
+        <div class="row">
+            <div class="col-lg-8 l_carousel">
+                <div id="first_carousel" class="carousel slide" data-ride="carousel">
+                    {{-- <ul class="carousel-indicators">
+                        <li data-target="#first_carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#first_carousel" data-slide-to="1"></li>
+                        <li data-target="#first_carousel" data-slide-to="2"></li>
+                        <li data-target="#first_carousel" data-slide-to="3"></li>
+                        <li data-target="#first_carousel" data-slide-to="4"></li>
+                    </ul> --}}
+                
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.amazon.com/kindle-dbs/entity/author/B01C65NKJO?_encoding=UTF8&amp;node=2656022011&amp;offset=0&amp;pageSize=12&amp;searchAlias=stripbooks&amp;sort=author-sidecar-rank&amp;page=1&amp;langFilter=default#formatSelectorHeader" target="blank">
+                                <img src="{{asset('assets/img/galary/Wife_Husband.jpg')}}" alt="Los Angeles">
+                            </a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <a href="https://www.amazon.com/-/e/B01C65NKJO" target="_blank">
+                                <img src="{{asset('assets/img/galary/educationalmaterials.jpg')}}" alt="Books Available">
+                            </a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <img src="{{asset('assets/img/galary/Erbil Iraq1.jpg')}}" alt="Erbil, Iraq">
+                        </div>               
+                            
+                        <div class="carousel-item">
+                            <img src="{{asset('assets/img/galary/Uganda1.jpg')}}" alt="Entebbe, Uganda">
+                        </div>
+        
+                        <div class="carousel-item">
+                            <img src="{{asset('assets/img/galary/Honduras.jpg')}}" alt="Le Ceiba, Honduras">
+                        </div>
+                        
+                    </div>
+                
+                    {{-- <a class="carousel-control-prev" href="#first_carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#first_carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>         --}}
+                </div>
+            </div>
+            <div class="col-lg-4 r_carousel">
+        
+                <div class="carousel_right" id = "carou1">
+                    <div class="">
+                        <span class="top"><strong>RELATIONSHIPS</strong><br>
+                            The WIVE'S SECRET WEAPON - gives wives the<br> 
+                            God given influence they were designed to have.<br>
+                            Ladies, you need to know your Secret Weapon!<br><br>
+                            
+                            THE HUSBAND'S TOOLBOX - provides men the<br>
+                            tools needed to succseed at home. These tools<br>
+                            should be in every husband's toolbox!<br><br>
+                            
+                            Both books help each to meet core needs of the<br>
+                            other while having fun. A must read for marriages.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="carousel_right" id = "carou2">
+                    <div>
+                        <span class="top"><strong>BOOKS FOR YOU!</strong><br>
+                            FIRST THINGS FIRST addresses things that every<br>
+                            Christian should know.<br><br>
+                            
+                            SECOND THINGS SECOND covers the Doctrine<br>
+                            Of Christ mentioned in Hebrews 6:1-2.<br><br>
+                            
+                            GOD'S BLUEPRINT FOR SPIRITUAL GROWTH<br>
+                            AND REWARD shows how Jesus Christ fulfilled<br>
+                            the Mosaic Tabernacle while showing us a<br>
+                            blueprint for growth and reward.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="carousel_right" id = "carou3">
+                    <div>
+                        <span class="top"><strong>Erbil, Iraq</strong><br>
+                            Erbil is the place of one of the oldest forts in the<br> 
+                            world. Alexander the Great was said to stop here<br> 
+                            as he continued his quest. The Curdish people are<br> 
+                            very strong and known for thier skills in battle.<br>
+                            Interestingly, the Christians and Muslims live in<br>
+                            harmony side by side. Yet Jesus is calling to their<br>
+                            hearts and saving souls.
+                        </span>
+                    </div>
+                </div>
+                    
+                <div class="carousel_right" id = "carou4">
+                    <div>
+                        <span class="top"><strong>Entebbe, Uganda</strong><br>
+                            The people are very receptive to Jesus Christ.<br>
+                            Many are poor and need assistance. <br><br>
+                            
+                            I had the privilage of praying for a woman who<br>
+                            had aids. The power of God fell so that she fell<br>
+                            to the ground under God's hand. <br><br>
+                            
+                            Pastor Mutebi, Miracle Center Catedral, is the <br>
+                            hardest working Man of God I have met. I met with<br>
+                            him on several occasions and found him laying brick<br>
+                            for the church.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="carousel_right" id = "carou5">
+                    <div>
+                        <span class="top">
+                            <strong>Le Ceiba, Honduras</strong><br>
+                            The Lord led in such a unique way here on <br>
+                            multiple occasions. I was led to one of the case <br>
+                            studies in my next book. <br><br>
+                            
+                            While visiting the local town, we ran across a <br>
+                            witch that started laughing at us. We began to <br>
+                            speak Jesus' name and the witch stopped <br>
+                            laughing and left the park very quickly.<br><br>
+                            
+                            To God be the Glory!
+                        </span>
+                    </div>
+                </div>
+                      
+            </div>
+        </div>
+
+        <div class="carousel_bottom">
+            <h3>Above are some places this ministry has been able to reach!</h3>
+        </div>
+        <div class="row home_part">
+            <div class="col-lg-8 home_left">
+                <div class="home_main">
+                    <h4>
+                        Welcome to
+                    </h4>
+                    <div class="text-center">
+                        <img src="{{asset('assets/img/FHM.png')}}" alt="">
+                    </div>
+                    <div class="text-center pt-3 pb-3">
+                        We hope that you are blessed by what you receive here. We strive to ensure that we are doing all for Jesus. He has done so much for us and loved us regardless of our belief or non-belief of Him. This is why we minister for Him!
+                    </div>
+                    <div class="text-center pb-3">
+                        Jesus loves you!
+                    </div>
+                    <div class="text-center pb-3 mb-3">
+                        And so do we.
+                    </div>
+                </div>
+                <div class="home_main">
+                    <div class="home_text pt-2 pb-3">
+                        Pastor Steve has authored some very helpful books!
+                    </div>
+                    <div class="home_text pt-2 pb-3">
+                        You can visit Pastor Steve's Author Page to see what books he has available by
+                    </div>
+                    <div>
+                        <a href="https://www.amazon.com/kindle-dbs/entity/author/B01C65NKJO?_encoding=UTF8&node=2656022011&offset=0&pageSize=12&searchAlias=stripbooks&sort=author-sidecar-rank&page=1&langFilter=default#formatSelectorHeader" target="_blank">CLICKING HERE! Pastor Steve's Author Page</a>
+                    </div>
+                    <div class="home_links">
+                        <div class="row">
+                            <div class="col-sm-4 home_link">
+                                <a href="{{asset('assets/img/FTF_cover.jpg')}}" data-lightbox="photos" title="For Beginners and those seeking to return to their first love.">
+                                    <img src="{{asset('assets/img/FTF_cover.jpg')}}" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 home_link">
+                                <a href="{{asset('assets/img/sts_cover.jpg')}}" title="For intermediate study and those returning to their first love.">
+                                    <img src="{{asset('assets/img/sts_cover.jpg')}}" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 home_link">
+                                <a href="{{asset('assets/img/gbf_cover.jpg')}}" title="Advanced Study on Jesus Christ and the Mosaic Tabernacle.">
+                                    <img src="{{asset('assets/img/gbf_cover.jpg')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_flink">
+                        <a href="{{asset('assets/img/GBB.jpg')}}" target="_blank">
+                            <h3>If you would like to read the front and back cover of the books, just click on the book!</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 home_right">
+                <a href="{{asset('assets/img/GBB.jpg')}}">                  
+                    <div class="home_rTitle">
+                        Lately:
+                    </div>
+                    <div class="home_rText">
+                        We're on a mission to do things with a "For Him" motive. This is our mantra; It's All For Jesus. Pray for us as we endeavor to make this for Jesus Christ.
+                    </div>
+                    <div class="home_rTitle">
+                        Special Thanks!
+                    </div>
+                    <div class="home_rText">
+                        Bishop and Pastor McMillan from Pensacola Life Church, FL for their guidance and encouragement. We Love You!
+                    </div>
+                    <div class="home_rTitle">
+                        Explore Our Site!
+                    </div>
+                    <div class="home_rText">
+                        There are many relative pages waiting for you to discover. Our goal is to assist you in your personal relationship with Jesus Christ. We hope you find what you are looking for. If you don't, shoot us an email and we'll see if we can add it for you!
+                    </div>
+                    <div class="home_rTitle">
+                        Here's some News!
+                    </div>
+                    <div class="home_rText">
+                        For Him Ministries is now recognized by the IRS as a 501(c)3 non-profit corporation. This means that all your contributions are tax deductable.
+                    </div>
+                </a>
+               
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('after_script')
+    <script type="text/javascript">      
+        $(function() {
+            $('.home_link a').lightBox();          
+
+             $('.carousel').carousel({
+                interval: 6000
+            });   
+
+            $(".r_carousel > div:gt(0)").hide();
+            
+            setInterval(function() {
+                $('.r_carousel > div:first')
+                    .slideDown(500)
+                    .slideUp(4000)        
+                    .next()      
+  
+                    .end()
+                    .appendTo('.r_carousel');
+            }, 5800);
+        });
+    </script>
+@endsection
