@@ -411,12 +411,60 @@ label{
     line-height: 40px;
 }
 
+.donation_text1{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    padding: 5px 0;
+}
+
+.donation_text2{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 18px;
+    font-weight: 600;
+    color: #3147AF;
+    padding-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.donation_text3{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 14px;
+    font-weight: 600;
+    color: #3147AF;
+    padding-left: 30px;
+}
+
+
+.mr-auto{
+    margin: auto !important;
+}
+
+.laptop_show{
+    display: none ;
+}
+
+.laptop_show a img {
+    width: 30px;
+    padding-top: 12px;
+}
+
+@media(max-width: 1200px){
+    .laptop_show{
+        display: block;   
+        text-align: center;
+    }
+}
 
 @media(max-width: 992px){
-
+/* 
     .navbar-expand-md .navbar-toggler {
         display: block;
-    }
+    } */
+
+   
 
     .r_carousel{
         margin-left: 15px;
@@ -459,6 +507,11 @@ label{
 }
 
 @media(max-width: 768px){
+
+    .laptop_show{
+        display: none;      
+    }
+
     .top{
         font-size: 12px;
         line-height: initial;
@@ -510,8 +563,19 @@ label{
     .mobile_show div{
         padding-left: 5px;
         padding-top: 10px;
+    }   
+
+    .carousel_bottom h3 {
+        font-size: 13px;
     }
 
+    #lightbox-nav-btnNext,
+    #lightbox-nav-btnPrev{
+        height: 250px !important;
+    }
+}
+
+@media(max-width:578px){
     #lightbox-container-image-box{
         width: 100% !important;
         height: fit-content !important;
@@ -526,9 +590,5 @@ label{
     }
     #lightbox-container-image-data-box{
          width: 100% !important;
-    }
-
-    .carousel_bottom h3 {
-        font-size: 13px;
     }
 }

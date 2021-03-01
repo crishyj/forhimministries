@@ -30,6 +30,7 @@ Route::get('/prayer_completed', [App\Http\Controllers\HomeController::class, 'pr
 Route::get('/about_vision', [App\Http\Controllers\HomeController::class, 'about_vision'])->name('about_vision');
 Route::get('/pastor_steve', [App\Http\Controllers\HomeController::class, 'pastor_steve'])->name('pastor_steve');
 Route::get('/pending', [App\Http\Controllers\HomeController::class, 'pending'])->name('pending');
+Route::get('/donation', [App\Http\Controllers\HomeController::class, 'donation'])->name('donation');
 
 // Auth::routes();
 

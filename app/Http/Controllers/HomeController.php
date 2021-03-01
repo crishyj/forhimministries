@@ -73,6 +73,12 @@ class HomeController extends Controller
                                 Attached is your free book "First Things First; What Every Christian Should Know". We hope that it blesses your heart.
                             </td>
                         </tr>
+
+                        <tr>
+                            <td style="font-size:14px; color:#323232">
+                                If you would like to contact us via email, please use customercare@forhimministries.org.
+                            </td>
+                        </tr>
     
                         <tr>
                             <td style="font-size:14px; color:#323232">
@@ -200,7 +206,7 @@ class HomeController extends Controller
 
                             <tr>
                                 <td style="font-size:14px; color:#323232">
-                                    All times, we get a word from the Lord concerning a prayer request.
+                                    At times, we get a word from the Lord concerning a prayer request.
                                     <br>
                                     If that should happen, we will notify you via your email address.
                                 </td>
@@ -217,6 +223,12 @@ class HomeController extends Controller
                                     '. $request['prayer_request'] .'
                                 </td>
                             </tr>
+
+                             <tr>
+                            <td style="font-size:14px; color:#323232">
+                                If you would like to contact us via email, please use customercare@forhimministries.org.
+                            </td>
+                        </tr>
 
                             <tr>
                                 <td style="font-size:14px; color:#323232">
@@ -278,6 +290,12 @@ class HomeController extends Controller
 
                         <tr>
                             <td style="font-size:14px; color:#323232">
+                                If you would like to contact us via email, please use customercare@forhimministries.org.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="font-size:14px; color:#323232">
                             In His Hands,
                             </td>
                         </tr>
@@ -330,5 +348,9 @@ class HomeController extends Controller
 
     public function pending(){
         return view('pending');
+    }
+
+   public function donation(){
+        return view('donation');
     }
 }

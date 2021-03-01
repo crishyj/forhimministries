@@ -30,7 +30,17 @@
       <div class="container">
             <div class="row header">
                 <div class="col-sm-2 col-3 logo text-center">
-                    <a href="{{ route('home') }}">  <img src="{{ asset('assets/img/Logo%20Cross.jpg')}}" alt=""> </a>
+                    <div>
+                        <a href="{{ route('home') }}">  <img src="{{ asset('assets/img/Logo%20Cross.jpg')}}" alt=""> </a>
+                    </div>                   
+                    <div class="laptop_show">
+                            <a href="http://www.facebook.com/For-Him-Ministry-96528235679" target="_blank">
+                                <img src="{{asset('assets/img/facebook.png')}}" alt="">
+                            </a>
+                            <a href="mailto:CustomerCare@ForHimMinistries.org" target="_blank">
+                                <img src="{{asset('assets/img/email.png')}}" alt="">
+                            </a>
+                    </div>
                 </div>
                 <div class="col-sm-10 col-9 text-center top_img">
                     <img src="{{ asset('assets/img/For%20Him%20Logo%20Clear.png')}}" alt="">
@@ -63,8 +73,7 @@
                                 <a href="mailto:CustomerCare@ForHimMinistries.org" target="_blank">
                                     <img src="{{asset('assets/img/email.png')}}" alt="">
                                 </a>
-                                <div class="">Connect/Contact us Today!</div>
-                                
+                                <div class="">Connect/Contact us Today!</div>                                
                         </div>
         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -103,7 +112,7 @@
                                     target="blank">{{ __('STORE') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('home') }}">{{ __('DONATE') }}</a>
+                                    <a class="nav-link" href="{{ route('donation') }}">{{ __('DONATE') }}</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -111,18 +120,17 @@
                                         RECORDING STUDIO
                                     </a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Studio Vision/Mission</a>
-                                      <a class="dropdown-item" href="#">Services Offered</a>
-                                      <a class="dropdown-item" href="#">Completed Projects</a>
-                                      <a class="dropdown-item" href="#">Building Progress</a>
+                                      <a class="dropdown-item" href="{{ route('pending') }}">Studio Vision/Mission</a>
+                                      <a class="dropdown-item" href="{{ route('pending') }}">Services Offered</a>
+                                      <a class="dropdown-item" href="{{ route('pending') }}">Completed Projects</a>
+                                      <a class="dropdown-item" href="{{ route('pending') }}">Building Progress</a>
                                     </div>
                                 </li>
                             </ul>
         
-                            <ul class="navbar-nav ml-auto">
-                                <!-- Authentication Links -->
+                            {{-- <ul class="navbar-nav ml-auto">
                                 @guest
-                                    {{-- @if (Route::has('login'))
+                                    @if (Route::has('login'))
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                         </li>
@@ -132,7 +140,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                         </li>
-                                    @endif --}}
+                                    @endif
                                 @else
                                     <li class="nav-item dropdown">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -152,7 +160,7 @@
                                         </div>
                                     </li>
                                 @endguest
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </nav>

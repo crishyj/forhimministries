@@ -120,7 +120,7 @@
                     <div class="text-center pb-3">
                         Jesus loves you!
                     </div>
-                    <div class="text-center pb-3 mb-3">
+                    <div class="text-center pb-3">
                         And so do we.
                     </div>
                 </div>
