@@ -11,6 +11,21 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+-- Dumping structure for table forhim.blogs
+CREATE TABLE IF NOT EXISTS `blogs` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table forhim.blogs: ~0 rows (approximately)
+DELETE FROM `blogs`;
+/*!40000 ALTER TABLE `blogs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `blogs` ENABLE KEYS */;
+
 -- Dumping structure for table forhim.failed_jobs
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -35,17 +50,19 @@ CREATE TABLE IF NOT EXISTS `migrations` (
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table forhim.migrations: ~5 rows (approximately)
+-- Dumping data for table forhim.migrations: ~7 rows (approximately)
 DELETE FROM `migrations`;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-	(16, '2014_10_12_000000_create_users_table', 1),
-	(17, '2014_10_12_100000_create_password_resets_table', 1),
-	(18, '2019_08_19_000000_create_failed_jobs_table', 1),
-	(19, '2021_02_24_002917_create_salvations_table', 1),
-	(20, '2021_02_24_060717_create_prayers_table', 1);
+	(49, '2014_10_12_000000_create_users_table', 1),
+	(50, '2014_10_12_100000_create_password_resets_table', 1),
+	(51, '2019_08_19_000000_create_failed_jobs_table', 1),
+	(52, '2021_02_24_002917_create_salvations_table', 1),
+	(53, '2021_02_24_060717_create_prayers_table', 1),
+	(54, '2021_03_01_184333_create_blogs_table', 1),
+	(55, '2021_03_01_184617_create_vlogs_table', 1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
 -- Dumping structure for table forhim.password_resets
@@ -103,17 +120,35 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `permission` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '2',
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table forhim.users: ~0 rows (approximately)
+-- Dumping data for table forhim.users: ~1 rows (approximately)
 DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `permission`, `remember_token`, `created_at`, `updated_at`) VALUES
+	(1, 'Pastor Morgan', 'webadmin@forhimministries.org', NULL, '$2y$10$5uDA1ZtsK5C7kVrBQTFXzODcaVMJsXqcda4S52jkLMEs1gDr39ede', '1', NULL, '2021-03-03 11:08:04', '2021-03-03 11:08:04');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+-- Dumping structure for table forhim.vlogs
+CREATE TABLE IF NOT EXISTS `vlogs` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `link` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table forhim.vlogs: ~0 rows (approximately)
+DELETE FROM `vlogs`;
+/*!40000 ALTER TABLE `vlogs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `vlogs` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

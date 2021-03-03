@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\URL;
 use App\Models\Salvation;
 use App\Models\Prayer;
+use App\Models\Blog;
+use App\Models\Vlog;
 
 class HomeController extends Controller
 {
@@ -350,7 +352,17 @@ class HomeController extends Controller
         return view('pending');
     }
 
-   public function donation(){
+    public function donation(){
         return view('donation');
+    }
+
+    public function blog(){
+        $blogs = Blog::all();
+        return view('blog', compact('blogs'));
+    }
+
+    public function vlog(){
+        $vlogs = Vlog::all();
+        return view('vlog', compact('vlogs'));
     }
 }

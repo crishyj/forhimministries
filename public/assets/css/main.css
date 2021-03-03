@@ -34,7 +34,7 @@ body{
 .nav nav{
     width: 100%;
     background-color: #7498ED;
-    border-bottom: 3px #0000FF solid;
+    border-bottom: 1px #0000FF solid;
     padding: 0;
 }
 
@@ -57,6 +57,8 @@ body{
 .dropdown-menu{
     background-image: url(../img/MenuBlockBackground.png);
     background-size: cover;
+    top: 35px !important;
+    left: 20px !important;
 }
 .dropdown-item:hover{
     color: #FFFFFF !important;

@@ -137,22 +137,22 @@
                     <div class="home_links">
                         <div class="row">
                             <div class="col-sm-4 home_link">
-                                <a href="{{asset('assets/img/FTF_cover.jpg')}}" data-lightbox="photos" title="For Beginners and those seeking to return to their first love.">
-                                    <img src="{{asset('assets/img/FTF_cover.jpg')}}" alt="">
+                                <a href="{{asset('assets/img/lightbox/FTF.png')}}" data-lightbox="photos" title="For Beginners and those seeking to return to their first love.">
+                                    <img src="{{asset('assets/img/lightbox/FTF.png')}}" alt="">
                                 </a>
-                                <a href="{{asset('assets/img/FTF_back.png')}}"></a>
+                                <a href="{{asset('assets/img/lightbox/FTB.png')}}"></a>
                             </div>
                             <div class="col-sm-4 home_link">
-                                <a href="{{asset('assets/img/sts_cover.jpg')}}" title="For intermediate study and those returning to their first love.">
-                                    <img src="{{asset('assets/img/sts_cover.jpg')}}" alt="">
+                                <a href="{{asset('assets/img/lightbox/STF.jpeg')}}" title="For intermediate study and those returning to their first love.">
+                                    <img src="{{asset('assets/img/lightbox/STF.jpeg')}}" alt="">
                                 </a>
-                                <a href="{{asset('assets/img/sts_back.jpg')}}"></a>
+                                <a href="{{asset('assets/img/lightbox/STB.png')}}"></a>
                             </div>
                             <div class="col-sm-4 home_link">
-                                <a href="{{asset('assets/img/TTTF.jpeg')}}" title="Advanced Study on Jesus Christ and the Mosaic Tabernacle.">
-                                    <img src="{{asset('assets/img/TTTF.jpeg')}}" alt="">
+                                <a href="{{asset('assets/img/lightbox/TTF.jpeg')}}" title="Advanced Study on Jesus Christ and the Mosaic Tabernacle.">
+                                    <img src="{{asset('assets/img/lightbox/TTF.jpeg')}}" alt="">
                                 </a>
-                                <a href="{{asset('assets/img/TTTB.jpeg')}}"></a>
+                                <a href="{{asset('assets/img/lightbox/TTB.jpeg')}}"></a>
                             </div>
                         </div>
                     </div>

@@ -22,7 +22,11 @@
     <link href="{{ asset('assets/css/slider.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/lightbox.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/main.css')}}" rel="stylesheet">
+    <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    @stack('css')
+
 
   </head>
   <body>
@@ -92,8 +96,8 @@
                                         {{ __('BLOGS-VLOGS') }}
                                     </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">{{ __('BLOGS') }}</a>
-                                        <a class="dropdown-item" href="#">{{ __('VLOGS') }}</a>                                         
+                                        <a class="dropdown-item" href="{{ route('blog') }}">{{ __('BLOGS') }}</a>
+                                        <a class="dropdown-item" href="{{ route('vlog') }}">{{ __('VLOGS') }}</a>                                         
                                     </div>
                                 </li>
                                
@@ -172,11 +176,18 @@
             &copy; Copyright 2004 - 2021 For Him Ministries.
       </div>
 
-    <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
+    {{-- <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{ asset('assets/js/popper.min.js')}}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script> --}}
+    <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('argon') }}/vendor/js-cookie/js.cookie.js"></script>
+    <script src="{{ asset('argon') }}/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="{{ asset('argon') }}/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <script src="{{ asset('argon') }}/vendor/lavalamp/js/jquery.lavalamp.min.js"></script>
     <script src="{{ asset('assets/js/slider.js')}}"></script>
     <script src="{{ asset('assets/js/lightbox.js')}}"></script>   
+   
 
     @yield('after_script')
     <script>      
@@ -194,6 +205,10 @@
             }
         );
     </script>
+    
+      @stack('js')
+      <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
+      <script src="{{ asset('argon') }}/js/demo.min.js"></script>
     
   </body>
 </html>
