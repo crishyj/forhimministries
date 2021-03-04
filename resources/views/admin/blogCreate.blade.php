@@ -7,7 +7,7 @@
     <div class="mx-5 mt-8 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-9 col-md-9">
-                <div class="card bg-secondary shadow border-0">
+                <div class="card bg-secondary shadow border-0">                   
                    
                     <div class="card-body px-lg-5 py-lg-5">
                         <form role="form" method="POST" action="{{ route('blog.store') }}" enctype="multipart/form-data" novalidate>

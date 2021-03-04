@@ -2,7 +2,7 @@
     <div class="scrollbar-inner scroll-scrollx_visible">
         <div class="sidenav-header d-flex align-items-center">
             <a class="navbar-brand" href="{{ route('admin') }}">
-                <!-- <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="..."> -->
+                {{-- <img src="{{asset('assets/img/header/admin_header.png')}}" class="navbar-brand-img" alt="..."> --}}
             </a>
             <div class="ml-auto">
                 <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
@@ -21,14 +21,14 @@
                         <li class="nav-item ">
                             <a class="nav-link collapsed" href="{{route('blog.index')}}" role="button"  aria-controls="navbar-dashboards">
                                 <i class="ni ni-circle-08 text-primary"></i>
-                                <span class="nav-link-text">{{ __('Blog') }}</span>
+                                <span class="nav-link-text">{{ __('Blogs') }}</span>
                             </a>                       
                         </li>
                     
                         <li class="nav-item ">
                             <a class="nav-link collapsed" href="{{route('vlog.index')}}" role="button"  aria-controls="navbar-dashboards">
                                 <i class="ni ni-book-bookmark text-primary"></i>
-                                <span class="nav-link-text">{{ __('Vlog') }}</span>
+                                <span class="nav-link-text">{{ __('Vlogs') }}</span>
                             </a>                       
                         </li> 
                         

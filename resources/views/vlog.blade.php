@@ -89,9 +89,13 @@
     <script>    
 
         $(document).ready(function(){
-            var i = 0;
             $("#datatable-basic tr").click(function(){
-                if(i % 2 == 0){
+                if($(this).hasClass('selected')){
+                    var video = document.getElementById('vlogVideo');
+                    video.src = '';
+                }
+                else
+                {
                     $(this).find(".title").each(function(){
                         $('.blog_title').text($(this).val());
                     });
@@ -102,11 +106,6 @@
                         video.src = link;
                     });
                 }
-                else{
-                        var video = document.getElementById('vlogVideo');
-                        video.src = '';
-                    }
-                i++;
             });
         })
     </script>

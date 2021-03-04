@@ -109,9 +109,13 @@
 
     <script>
         $(document).ready(function(){
-            var i = 0;
             $("#datatable-basic tr").click(function(){
-                if(i % 2 == 0){
+                if($(this).hasClass('selected')){
+                    $('.blog_title').text('');
+                    $('.blog_detail').html('');
+                }
+                else
+                {
                     $(this).find(".title").each(function(){
                         $('.blog_title').text($(this).val());
                     });
@@ -120,11 +124,6 @@
                         $('.blog_detail').html($(this).val());
                     });
                 }
-                else{
-                        $('.blog_title').text('');
-                        $('.blog_detail').html('');
-                    }
-                i++;
             });
         })
     </script>

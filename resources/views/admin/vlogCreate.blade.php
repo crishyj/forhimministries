@@ -38,6 +38,10 @@
                                         <strong>{{ $errors->first('link') }}</strong>
                                     </span>
                                 @endif
+                                <div class="progress">
+                                    <div class="bar"></div >
+                                    <div class="percent">0%</div >
+                                </div>
                             </div>
                            
                             <div class="text-center">
@@ -57,6 +61,11 @@
     <link rel="stylesheet" href="{{ asset('argon') }}/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="{{ asset('argon') }}/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
     <link rel="stylesheet" href="{{ asset('argon') }}/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">    
+    <style>
+        .progress { position:relative; width:100%; height: auto !important;}
+        .bar { background-color: #008000; width:0%; height:20px; }
+        .percent { position:absolute; display:inline-block; left:50%; color: #7F98B2;}
+    </style>
 @endpush
 
 @push('js')
@@ -68,5 +77,30 @@
     <script src="{{ asset('argon') }}/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
     <script src="{{ asset('argon') }}/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="{{ asset('argon') }}/vendor/datatables.net-select/js/dataTables.select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var bar = $('.bar');
+            var percent = $('.percent');
+
+            $('form').ajaxForm({
+                beforeSend: function() {
+                    var percentVal = '0%';
+                    bar.width(percentVal)
+                    percent.html(percentVal);
+                },
+                uploadProgress: function(event, position, total, percentComplete) {
+                    var percentVal = percentComplete + '%';
+                    bar.width(percentVal)
+                    percent.html(percentVal);
+                },
+                complete: function(xhr) {
+                    // alert('File Uploaded Successfully');
+                    window.location.href = "/admin_vlog";
+                }
+            });
+        }); 
+    </script>
    
 @endpush

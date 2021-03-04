@@ -10,9 +10,11 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row align-items-center">
+                           
                             <div class="col-8">
                                 <h3 class="mb-0">{{ __('Vlogs') }}</h3>
                             </div>
+                         
                             <div class="col-4 text-right">
                                 <a href="{{route('vlog.create')}}" class="btn btn-sm btn-primary">{{ __('Create Vlog') }}</a>
                             </div>
@@ -124,6 +126,10 @@
         }
 
         #vlogVideo{
+            width: 100%;
+        }
+
+        .admin_header img{
             width: 100%;
         }
        

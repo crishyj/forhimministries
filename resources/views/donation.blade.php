@@ -54,7 +54,7 @@
                 </span>
             </div>
 
-            <div class="text-center donation_text2">
+            <div class="text-center donation_text2 pt-5">
                 Cash App Tag: $ForHimMinistriesInc
             </div>
 
@@ -66,7 +66,7 @@
                 </span>
             </div>
 
-            <div class="text-center donation_text2">
+            <div class="text-center donation_text2 pt-5">
                 Or you can donate by Check or Money Order:
             </div>
 

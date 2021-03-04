@@ -15,7 +15,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <a href="https://www.amazon.com/kindle-dbs/entity/author/B01C65NKJO?_encoding=UTF8&amp;node=2656022011&amp;offset=0&amp;pageSize=12&amp;searchAlias=stripbooks&amp;sort=author-sidecar-rank&amp;page=1&amp;langFilter=default#formatSelectorHeader" >
-                                <img src="{{asset('assets/img/galary/Wife_Husband.jpg')}}" alt="Los Angeles">
+                                <img src="{{asset('assets/img/galary/slide1.png')}}" alt="">
                             </a>
                             <div class="carousel-caption">
                                 <span class="top"><strong>RELATIONSHIPS</strong><br>
@@ -32,7 +32,7 @@
         
                         <div class="carousel-item">
                             <a href="https://www.amazon.com/-/e/B01C65NKJO">
-                                <img src="{{asset('assets/img/galary/s_slide.png')}}" alt="Books Available">
+                                <img src="{{asset('assets/img/galary/slide2.png')}}" alt="Books Available">
                             </a>
                             <div class="carousel-caption">
                                 <span class="top"><strong>BOOKS FOR YOU!</strong><br>
@@ -46,7 +46,7 @@
                         </div>
         
                         <div class="carousel-item">
-                            <img src="{{asset('assets/img/galary/Erbil Iraq1.jpg')}}" alt="Erbil, Iraq">
+                            <img src="{{asset('assets/img/galary/slide3.png')}}" alt="Erbil, Iraq">
                             <div class="carousel-caption">
                                 <span class="top"><strong>Erbil, Iraq</strong><br>
                                     Erbil is the place of one of the oldest forts in the world.<br>
@@ -60,7 +60,7 @@
                         </div>               
                             
                         <div class="carousel-item">
-                            <img src="{{asset('assets/img/galary/Uganda1.jpg')}}" alt="Entebbe, Uganda">
+                            <img src="{{asset('assets/img/galary/slide4.png')}}" alt="Entebbe, Uganda">
                             <div class="carousel-caption">
                                 <span class="top"><strong>Entebbe, Uganda</strong><br>
                                     The people are very receptive to Jesus Christ.<br>
@@ -76,7 +76,7 @@
                         </div>
         
                         <div class="carousel-item">
-                            <img src="{{asset('assets/img/galary/Honduras.jpg')}}" alt="Le Ceiba, Honduras">
+                            <img src="{{asset('assets/img/galary/slide5.png')}}" alt="Le Ceiba, Honduras">
                             <div class="carousel-caption">
                                 <span class="top">
                                     <strong>Le Ceiba, Honduras</strong><br>
