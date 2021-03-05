@@ -21,7 +21,7 @@
                         </div>
                     @endif
 
-                    {{ __('Welcome to the Administration Page. Select the Menu on the upper left to begin managing the Blogs and Vlogs.') }}
+                    {{ __('Welcome to the Administration Page. Select Menu to begin managing the Blogs and Vlogs.') }}
                 </div>
             </div>
         </div>

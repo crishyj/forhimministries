@@ -10,9 +10,15 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row align-items-center">
-                            <div class="col-8">
+                            <div class="col-4">
                                 <h3 class="mb-0">{{ __('Blogs') }}</h3>
-                            </div>                           
+                            </div>   
+                            <div class="col-4">
+                                <div class="admin_header">
+                                  <img src="{{asset('assets/img/header/admin_blog.png')}}" class="navbar-brand-img" alt="...">
+                                  </div>
+                              </div>
+                                                   
                             <div class="col-4 text-right">
                                 <a href="{{route('blog.create')}}" class="btn btn-sm btn-primary">{{ __('Create Blog') }}</a>
                             </div>
@@ -118,6 +124,10 @@
         .tox-tinymce{
            width: 100%;
         }       
+
+        .admin_header img{
+            width: 100%;
+        }
     </style>
 @endpush
 

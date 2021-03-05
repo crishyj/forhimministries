@@ -14,7 +14,7 @@
                 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://www.amazon.com/kindle-dbs/entity/author/B01C65NKJO?_encoding=UTF8&amp;node=2656022011&amp;offset=0&amp;pageSize=12&amp;searchAlias=stripbooks&amp;sort=author-sidecar-rank&amp;page=1&amp;langFilter=default#formatSelectorHeader" >
+                            <a href="https://www.amazon.com/kindle-dbs/entity/author/B01C65NKJO?_encoding=UTF8&amp;node=2656022011&amp;offset=0&amp;pageSize=12&amp;searchAlias=stripbooks&amp;sort=author-sidecar-rank&amp;page=1&amp;langFilter=default#formatSelectorHeader" target="_blank">
                                 <img src="{{asset('assets/img/galary/slide1.png')}}" alt="">
                             </a>
                             <div class="carousel-caption">
@@ -31,7 +31,7 @@
                         </div>
         
                         <div class="carousel-item">
-                            <a href="https://www.amazon.com/-/e/B01C65NKJO">
+                            <a href="https://www.amazon.com/-/e/B01C65NKJO" target="_blank">
                                 <img src="{{asset('assets/img/galary/slide2.png')}}" alt="Books Available">
                             </a>
                             <div class="carousel-caption">

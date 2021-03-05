@@ -445,7 +445,7 @@ label{
 }
 
 .laptop_show{
-    display: none ;
+   /* display: none ; */
 }
 
 .laptop_show a img {
@@ -509,6 +509,13 @@ label{
 }
 
 @media(max-width: 768px){
+     .navbar-expand-md .navbar-toggler{
+          display: block !important;
+       }
+
+       .logo img {
+            width: 150%;
+        }
 
     .laptop_show{
         display: none;      
