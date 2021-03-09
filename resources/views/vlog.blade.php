@@ -36,7 +36,7 @@
                 Vlog Detail
             </div>
             <div class="vlogshow">
-                <video controls id = "vlogVideo">
+                <video controls id = "vlogVideo" controlsList="nodownload">
                     <source src="" type="video/mp4" class="video_link">
                     <source src="" type="video/ogg" class="video_link">
                     Your browser does not support the video tag.
@@ -87,25 +87,22 @@
     <script src="{{ asset('argon') }}/vendor/datatables.net-select/js/dataTables.select.min.js"></script>
 
     <script>    
-
         $(document).ready(function(){
             $("#datatable-basic tr").click(function(){
+               
                 if($(this).hasClass('selected')){
                     var video = document.getElementById('vlogVideo');
                     video.src = '';
                 }
                 else
-                {
-                    $(this).find(".title").each(function(){
-                        $('.blog_title').text($(this).val());
-                    });
-
+                {                   
                     $(this).find(".link").each(function(){
                         link = $(this).val();
                         var video = document.getElementById('vlogVideo');
                         video.src = link;
+                        // $('.video_link').attr('src', link);
                     });
-                }
+                    }
             });
         })
     </script>

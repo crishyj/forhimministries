@@ -149,7 +149,7 @@
                                 <a href="{{asset('assets/img/lightbox/STB.png')}}"></a>
                             </div>
                             <div class="col-sm-4 home_link">
-                                <a href="{{asset('assets/img/lightbox/TTF.jpeg')}}" title="Advanced Study on Jesus Christ and the Mosaic Tabernacle.">
+                                <a href="{{asset('assets/img/lightbox/TTF.jpeg')}}" title="Principles that will help you succeed as a Christian.">
                                     <img src="{{asset('assets/img/lightbox/TTF.jpeg')}}" alt="">
                                 </a>
                                 <a href="{{asset('assets/img/lightbox/TTB.jpeg')}}"></a>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container salvation">
     <div class="text-center pt-3 pb-3" >
-        <img src="{{asset('assets/img/Salvation2.png')}}" alt="">        
+        <img src="{{asset('assets/img/header/salvation.png')}}" alt="">        
     </div>
     <div class="salvation_text">
         God forbid, but if you were to die this second, do you know for sure, beyond a shadow of a doubt, that you would go to Heaven?

@@ -509,13 +509,13 @@ label{
 }
 
 @media(max-width: 768px){
-     .navbar-expand-md .navbar-toggler{
-          display: block !important;
-       }
+    .navbar-expand-md .navbar-toggler{
+        display: block !important;
+    }
 
-       .logo img {
-            width: 150%;
-        }
+    .logo img {
+        width: 120%;
+    }
 
     .laptop_show{
         display: none;      
